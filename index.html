@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyNote</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>MyNote</h1>
+    <h2>Be organized!</h2>
+    <div id="titlefirst">
+      <input
+        type="text"
+        id="title"
+        placeholder="Write the title of the note..."
+        required
+      />
+      <button id="addnote">Dodaj notatkę</button>
+      <span id="warning" style="display: none"></span>
+    </div>
+    <div id="editor" style="display: none">
+      <textarea id="notecontent" placeholder="Write here..."></textarea>
+      <div id="buttons">
+        <button id="savenote">Save</button>
+        <button id="quitnote">Quit</button>
+      </div>
+    </div>
+    <ul id="noteslist"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
